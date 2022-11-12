@@ -8,7 +8,7 @@ employee_list = [
     'главный бухгалтер МАРИНА', 
     'токарь высшего разряда нИКОЛАй', 
     'директор аэлита'
-    ]
+]
 for i in range(len(employee_list)):
     name = ''
     for j in range(len(employee_list[i]) - 1, -1, -1):
@@ -17,7 +17,7 @@ for i in range(len(employee_list)):
         else:
             name = ''.join(reversed(name)).capitalize()
             employee_list[i] = employee_list[i][0:j] + ' ' + name
-            print(name)
+            print(f'Привет, {name}')
             break
 
 print(employee_list)
